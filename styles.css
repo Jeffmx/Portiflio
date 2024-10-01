@@ -1,0 +1,236 @@
+.body{
+    margin: 0px;
+}
+
+.titulo{
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    margin: 0px;
+    color: black;
+}
+
+.titulo_2{
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 720;
+    line-height: 18px;
+    text-align: left;
+    margin: 0%;
+}
+
+.sub_titulo{
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 450;
+    line-height: 15px;
+    text-align: left;
+    margin: 0px;
+}
+
+.sub_titulo_2{
+    margin: 0px;
+}
+
+/* Header */
+
+.header_main{
+    background-color: gray;
+    padding: 20px 16px;
+}
+
+.header_conteiner{
+    justify-content: space-between;
+    max-width: auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.header_intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+
+.header_img{
+    width: 25px;
+}
+
+.header_main_shortcuts{
+    display: none;
+}
+
+.email{
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 360;
+    line-height: 15px;
+    text-align: left;
+}
+
+/* Introdução */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    background-color: aqua;
+}
+
+.intro_links{
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 90px;
+}
+
+.intro_lore{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.intro_links{
+    display: flex;
+    gap: 9px;
+}
+
+/* Sobre mim */
+
+.sobre_mim{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    background-color: aquamarine;
+}
+
+/* Skills & Hobbies */
+
+.feitos{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    background-color: blue;
+}
+
+.feitos_conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    overflow: hidden;
+}
+
+.feitos_lista{
+    max-width: 324px;
+    display: flex;
+    overflow-x: auto;
+    gap: 18px;
+}
+
+.lista_conteiner{
+    text-align: center;
+    border-radius: 18px;
+    background-color: white;
+    padding: 18px;
+}
+
+.lista_img{
+    width: 72px;
+}
+
+/* Formação Acadêmica */
+
+.formacao_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    background-color: darkblue;
+}
+
+.formacao_lista{
+    max-width: 324px;
+    display: flex;
+    overflow-y: auto;
+    overflow: hidden;
+    gap: 18px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.formacao_detalhe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 18px;
+    background-color: white;
+    width: 207px;
+    height: 207px;
+    gap: 9px;
+}
+
+.formacao_local{
+    width: 150px;
+}
+
+/* Experiência Profissional */
+
+.exp_conteiner{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 36px;
+    background-color: cornflowerblue;
+}
+
+.exp_item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.exp_item_img{
+    width: 300px;
+    border-radius: 18px;
+}
+
+.exp_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.botao{
+    background-color: red;
+    text-align: center;
+    border-radius: 45px;
+    text-decoration: none;
+    color: black;
+    padding: 18px 0px;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    align-items: center;
+}
