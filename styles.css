@@ -1,30 +1,62 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .body{
     margin: 0px;
 }
 
+:root{
+    --cor1: #0f0f0f;
+    --cor2: gray;
+    --cor3: #f0f0f0;
+    --txt1: #fff;
+    --font: Poppins, sans-serif;
+}
+
 .titulo{
-    font-family: Raleway;
-    font-size: 18px;
+    font-family: var(--font);
     font-weight: 600;
+    font-size: 18px;
     line-height: 18px;
     text-align: left;
     margin: 0px;
-    color: black;
+    color: var(--texto);
+}
+
+.titulo_section{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    margin: 0px;
+    color: var(--texto);
+}
+
+.titulo_header{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    margin: 0px;
+    color: var(--txt1);
 }
 
 .titulo_2{
-    font-family: Raleway;
-    font-size: 15px;
+    font-family: var(--font);
     font-weight: 720;
+    font-size: 15px;
     line-height: 18px;
     text-align: left;
     margin: 0%;
 }
 
 .sub_titulo{
-    font-family: Raleway;
+    font-family: var(--font);
+    font-weight: 500;
     font-size: 15px;
-    font-weight: 450;
     line-height: 15px;
     text-align: left;
     margin: 0px;
@@ -37,7 +69,7 @@
 /* Header */
 
 .header_main{
-    background-color: gray;
+    background-color: var(--cor1);
     padding: 20px 16px;
 }
 
@@ -65,11 +97,12 @@
 }
 
 .email{
-    font-family: Raleway;
-    font-size: 15px;
-    font-weight: 360;
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 720;
     line-height: 15px;
     text-align: left;
+    color: var(--txt1);
 }
 
 /* Introdução */
@@ -79,21 +112,21 @@
     flex-direction: column;
     padding: 15px;
     gap: 15px;
-    background-color: aqua;
+    background-color: var(--cor2);
 }
 
 .intro_links{
-    font-family: Raleway;
+    font-family: var(--font);
     font-size: 15px;
     font-weight: 600;
     line-height: 15px;
     text-align: left;
-    text-decoration: none;
     color: black;
 }
 
 .logo{
     width: 90px;
+    height: 90px;
 }
 
 .intro_lore{
@@ -114,7 +147,7 @@
     flex-direction: column;
     padding: 15px;
     gap: 15px;
-    background-color: aquamarine;
+    background-color: var(--cor3);
 }
 
 /* Skills & Hobbies */
@@ -124,7 +157,7 @@
     flex-direction: column;
     padding: 15px;
     gap: 15px;
-    background-color: blue;
+    background-color: var(--cor2);
 }
 
 .feitos_conteiner{
@@ -132,20 +165,25 @@
     flex-direction: column;
     align-items: center;
     gap: 36px;
-    overflow: hidden;
 }
 
 .feitos_lista{
     max-width: 324px;
     display: flex;
-    overflow-x: auto;
+    overflow-y: auto;
     gap: 18px;
+}
+
+.feitos_lista::-webkit-scrollbar,
+.formacao_lista::-webkit-scrollbar{
+    display: none;
 }
 
 .lista_conteiner{
     text-align: center;
     border-radius: 18px;
-    background-color: white;
+    background-color: var(--cor1);
+    color: var(--txt1);
     padding: 18px;
 }
 
@@ -161,14 +199,13 @@
     align-items: center;
     padding: 15px;
     gap: 15px;
-    background-color: darkblue;
+    background-color: var(--cor3);
 }
 
 .formacao_lista{
     max-width: 324px;
     display: flex;
     overflow-y: auto;
-    overflow: hidden;
     gap: 18px;
     margin: 0%;
     padding: 0%;
@@ -179,9 +216,10 @@
     flex-direction: column;
     align-items: center;
     border-radius: 18px;
-    background-color: white;
+    background-color: var(--cor1);
+    color: var(--txt1);
     width: 207px;
-    height: 207px;
+    height: 225px;
     gap: 9px;
 }
 
@@ -197,7 +235,7 @@
     padding: 30px;
     align-items: center;
     gap: 36px;
-    background-color: cornflowerblue;
+    background-color: var(--cor2);
 }
 
 .exp_item{
@@ -218,12 +256,19 @@
 }
 
 .botao{
-    background-color: red;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    margin: 0px;
+    color: var(--texto);
     text-align: center;
     border-radius: 45px;
     text-decoration: none;
-    color: black;
     padding: 18px 0px;
+    color: var(--txt1);
+    background-color: var(--cor1);
 }
 
 /* Footer */
@@ -231,6 +276,158 @@
 .footer{
     display: flex;
     flex-direction: column;
-    padding: 18px;
     align-items: center;
+    padding: 18px;
+    background-color: var(--cor1);
+    color: var(--txt1);
+}
+
+@media (min-width: 768px){
+
+    .titulo{
+        font-size: 22px;
+    }
+
+    .intro{
+        flex-direction: row-reverse;
+        padding: 40px 32px;
+        gap: 32px;
+    }
+
+    .logo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .sobre_mim{
+        padding: 36px;
+    }
+
+    .feitos{
+        padding: 36px;
+    }
+
+    .feitos_lista{
+        max-width: 700px;
+    }
+
+    .formacao_lista{
+        max-width: 700px;
+    }
+
+    .exp_item_img{
+        width: 700px;
+    }
+
+    .botao{
+        width: 200px;
+    }
+
+    .footer{
+        padding: 36px 0px;
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    .titulo_2{
+        font-size: 27px;
+    }
+
+    .sub_titulo_2{
+        font-family: var(--font);
+    }
+
+    .email{
+        font-size: 18px;
+    }
+    
+    .logo{
+        width: 360px;
+        height: 360px;
+    }
+    .header_conteiner{
+        padding: 18px 150px;
+    }
+
+    .header_main_shortcuts{
+        display: flex;    
+        flex-direction: row;
+        gap: 18px;
+    }
+    
+    .header_shortcuts{
+        
+        color: var(--txt1);        
+        text-decoration: none;
+    }
+
+    .intro{
+        align-items: center;
+        padding: 100px 150px;
+    }
+
+    .intro_links{
+        font-size: 18px;
+    }
+
+    .titulo{
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .titulo_section{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    .sub_titulo{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .sobre_mim{
+        padding: 64px 45% 64px 150px;
+    }
+    
+    .feitos_lista{
+        max-width: 1300px;
+    }
+
+    .formacao_main{
+        padding: 36px;
+    }
+
+    .formacao_lista{
+        align-items: center;
+        height: 250px;
+        max-width: 1300px;
+    }
+
+    .formacao_detalhe{
+        width: 270px;
+    }
+
+    .exp_conteiner{
+        gap: 90px;
+        padding: 54px 0px;
+    }
+
+    .exp_item{
+        align-items: center;
+        gap: 45px;
+    }
+
+    .exp_item:nth-child(2),
+    .exp_item:nth-child(4){
+        flex-direction: row;
+    }
+    .exp_item:nth-child(3),
+    .exp_item:nth-child(5){
+        flex-direction: row-reverse;
+    }
+
+    .botao{
+        width: auto;
+    }
 }
